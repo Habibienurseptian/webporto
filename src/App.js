@@ -381,7 +381,7 @@ function App() {
             </div>
             <img
               src={Image}
-              className="h-auto max-w-lg transition-all duration-300 rounded-lg blur-sm hover:blur-none cursor-pointer"
+              className="h-auto transition-all duration-300 rounded-lg blur-sm hover:blur-none cursor-pointer"
             />
           </div>
         </section>
