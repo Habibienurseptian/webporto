@@ -23,6 +23,7 @@ function App() {
   }, []);
 
 
+
   if (!isMobile) {
     return (
       <div>
@@ -211,7 +212,7 @@ function App() {
     );
   } else {
     return (
-      <div>
+      <div className="container mx-auto max-w-screen-md">
         <section className="relative">
           <nav>
             <div className="bg-purple-950 flex justify-between items-center px-4 py-4 text-white">
@@ -238,7 +239,7 @@ function App() {
 
           {/* Sidebar */}
           <div
-            className={`fixed top-0 right-0 h-full bg-purple-950 text-white shadow-lg transform transition-transform duration-300 ease-in-out w-64 z-50 ${
+            className={`fixed top-0 right-0 h-full max-h-screen overflow-y-auto bg-purple-950 text-white shadow-lg transform transition-transform duration-300 ease-in-out w-64 z-50 ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
